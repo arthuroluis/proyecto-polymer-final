@@ -1,0 +1,36 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="task-input">
+
+    <template>
+        <style>
+            :host{
+                display:block;
+            }
+        </style>
+
+        <div>
+            <form action="_getNewTask" method="get">
+                <span>Ingrese la tarea</span>
+                <input>
+                <button type="submit">Agregar tarea</button>
+            </form>
+        </div>
+
+    </template>
+
+    <script>
+        class TaskInput extends Polymer.Element{
+            static get is(){
+                return 'task-input'
+            }
+
+            _getNewTask(event){
+                console.log(event)
+            }
+        }
+        
+        customElements.define(TaskInput.is, TaskInput)
+    </script>
+    
+</dom-module>

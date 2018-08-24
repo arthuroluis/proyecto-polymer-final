@@ -1,0 +1,33 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="task-list">
+
+    <template>
+        <style>
+            :host{
+                display:block;
+            }
+        </style>
+
+        <div>
+            <h3>Lista de cosas por hacer:</h3>
+            <span>[[name]]</span>
+        </div>
+
+    </template>
+
+    <script>
+        class TaskList extends Polymer.Element{
+            static get is(){
+                return 'task-list'
+            }
+            static get properties(){
+                return {
+                    name: String
+                }
+            }
+        }
+        customElements.define(TaskList.is, TaskList)
+    </script>
+    
+</dom-module>

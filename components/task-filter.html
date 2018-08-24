@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="task-filter">
+
+    <template>
+        <style>
+            :host{
+                display:block;
+            }
+        </style>
+
+        <div>
+            <span>Busque una tarea</span>
+            <input>
+        </div>
+
+    </template>
+
+    <script>
+        class TaskFilter extends Polymer.Element{
+            static get is(){
+                return 'task-filter'
+            }
+        }
+        customElements.define(TaskFilter.is, TaskFilter)
+    </script>
+    
+</dom-module>

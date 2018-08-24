@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-polymer-final",
+  "homepage": "https://github.com/arthuroluis/proyecto-polymer-final",
+  "authors": [
+    "Luis Arturo Hernández Rodríguez"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0"
+  }
+}

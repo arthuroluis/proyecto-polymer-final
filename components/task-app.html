@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="task-filter.html">
+<link rel="import" href="task-input.html">
+<link rel="import" href="task-list.html">
+
+<dom-module id="task-app">
+
+    <template>
+        <style>
+            :host{
+                display:block;
+            }
+        </style>
+
+        <div>
+            <task-input></task-input>
+            <task-filter></task-filter>
+            <task-list name="Prueba"></task-list>
+        </div>
+
+    </template>
+
+    <script>
+        class TaskApp extends Polymer.Element{
+            static get is(){
+                return 'task-app'
+            }
+        }
+        customElements.define(TaskApp.is, TaskApp)
+    </script>
+
+</dom-module>
